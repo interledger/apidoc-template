@@ -1,10 +1,10 @@
 /* ------------------------------------------------------------------------------------------
  * Content
  * ------------------------------------------------------------------------------------------ */
-body {
+/*body {
   min-width: 980px;
   max-width: 1280px;
-}
+}*/
 
 body, p, a, div, th, td {
   font-family: "Source Sans Pro", sans-serif;
@@ -256,7 +256,7 @@ pre.language-json .pun {
   padding: 20px;
   position: fixed;
   top: 0;
-  left: 0;
+ /* left: 0;*/
   bottom: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -536,3 +536,64 @@ ul.nav-tabs {
   }
 
 } /* /@media print */
+
+
+/*Custom*/
+
+/* h1:before, h3:before {
+    display: block;
+    content: " ";
+    margin-top: -125px;
+    padding-top: 125px;
+    visibility: hidden;
+}
+*/
+button#version,
+.version {
+  display: none;
+}
+
+.navbar {
+  background-color: #000;
+  border-color: transparent;
+  border: none !important;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  border-bottom: 3px solid red;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+  }
+}
+
+
+li.active a {
+  color: #ff0c3e;
+}
+
+.main-wrapper {
+  margin-top: 90px;
+}
+
+.sidenav {
+  top: 80px;
+}
+
+.navbar {
+  height: 53px;
+}
+
+
+
+

@@ -9,8 +9,34 @@
   <link href="css/style.css" rel="stylesheet" media="screen, print">
   <link href="img/favicon.ico" rel="icon" type="image/x-icon">
   <script src="vendor/polyfill.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700,400italic|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Interledger</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="overview.html">Docs</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a target="_blank" href="https://github.com/interledger">Github <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <script id="template-sidenav" type="text/x-handlebars-template">
 <nav id="scrollingNav">
@@ -625,15 +651,17 @@
   </tbody>
 </script>
 
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div id="sidenav" class="span2"></div>
-    <div id="content">
-      <div id="project"></div>
-      <div id="header"></div>
-      <div id="sections"></div>
-      <div id="footer"></div>
-      <div id="generator"></div>
+<div class="container main-wrapper">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="sidenav" class="span2"></div>
+      <div id="content">
+        <div id="project"></div>
+        <div id="header"></div>
+        <div id="sections"></div>
+        <div id="footer"></div>
+        <div id="generator"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -654,5 +682,6 @@
 </div>
 
 <script data-main="main.js" src="vendor/require.min.js"></script>
+
 </body>
 </html>
