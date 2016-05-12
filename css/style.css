@@ -7,9 +7,11 @@
 }*/
 
 body, p, a, div, th, td {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  color: #333333;
   font-weight: 400;
-  font-size: 16px;
 }
 
 td.code {
@@ -26,16 +28,13 @@ td.code {
 }
 
 p {
-  color: #808080;
+  color: #333333;
 }
 
 h1 {
-  font-family: "Source Sans Pro Semibold", sans-serif;
-  font-weight: normal;
-  font-size: 44px;
-  line-height: 50px;
-  margin: 0 0 10px 0;
-  padding: 0;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 52px;
 }
 
 h2 {
@@ -54,9 +53,9 @@ section {
 
 section h1 {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 32px;
   padding-bottom: 14px;
   margin: 0 0 20px 0;
   padding: 0;
@@ -67,9 +66,9 @@ article {
 }
 
 article h1 {
-  font-family: "Source Sans Pro Bold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 26px;
 }
 
@@ -164,12 +163,13 @@ td {
  * pre / code
  * ------------------------------------------------------------------------------------------ */
 pre {
-  background-color: #292b36;
+  background-color: #373e3f;
   color: #ffffff;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 0;
+  border: none;
   position: relative;
-  margin: 10px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 code.language-text {
@@ -225,14 +225,59 @@ pre.language-api .pun {
   color: #65B042;
 }
 
+code, kbd, pre, samp {
+  font-family: 'Droid Sans Mono', Menlo, Monaco,Consolas, "Courier New", monospace;
+  font-size: 15px;
+  color: #444444;
+}
+
+p > code {
+  background-color: rgba(0,0,0,0.1);
+}
+
 pre code {
   display: block;
   font-size: 14px;
-  font-family: "Source Code Pro";
+  font-family: 'Droid Sans Mono', Menlo, Monaco,Consolas, "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   word-wrap: normal;
   white-space: pre;
+  padding: 5px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #373e3f;
+  border: none;
+  border-bottom-color: transparent;
+  font-size: 15px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs>li>a {
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #9a9a9a;
+  color: #fff;
+}
+
+.nav-tabs>li>a:hover {
+  background-color: #737373;
+  border: none;
+}
+
+.nav-tabs>li {
+  margin-bottom: -6px;
+  border: none;
 }
 
 /*
@@ -290,7 +335,7 @@ pre.language-json .pun {
 }
 
 .sidenav > li.nav-header.active > a {
-  background-color: #0088cc;
+  background-color: #e5e5e5;
 }
 
 .sidenav > .active > a {
@@ -579,7 +624,6 @@ button#version,
   }
 }
 
-
 li.active a {
   color: #ff0c3e;
 }
@@ -596,6 +640,22 @@ li.active a {
   height: 53px;
 }
 
+.overview-back {
+  margin: 0 0 25px 15px;
+}
 
+.overview-back a {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h1:before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+}
 
 
