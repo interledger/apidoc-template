@@ -6,11 +6,11 @@
   max-width: 1280px;
 }*/
 
-body, p, a, div, th, td {
+body, p, a, div {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 17px;
   line-height: 26px;
-  color: #333333;
+  color: #555;
   font-weight: 400;
 }
 
@@ -19,6 +19,7 @@ td.code {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
+  vertical-align: top;
 }
 
 #content {
@@ -28,48 +29,55 @@ td.code {
 }
 
 p {
-  color: #333333;
+  color: #555;
 }
 
 h1 {
+  font-size: 48px;
   font-weight: 600;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 52px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 24px;
-  line-height: 40px;
-  margin: 0 0 20px 0;
-  padding: 0;
+  line-height: 26px;
+  padding: 0 0 52px 0;
+  margin: 0px 0 26px 0;
 }
 
 section {
-  border-top: 1px solid #ebebeb;
-  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  padding: 0px 0;
 }
 
 section h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  font-size: 32px;
+  font-size: 19px;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  margin: 0px;
+  padding-top: 12px;
   line-height: 32px;
-  padding-bottom: 14px;
-  margin: 0 0 20px 0;
-  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 article {
-  padding: 14px 0 30px 0;
+  padding: 0px 0 30px 0;
 }
 
 article h1 {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 26px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: none;
+  padding-top: 26px;
+  letter-spacing: 0px;
 }
 
 article h2 {
@@ -77,7 +85,8 @@ article h2 {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 10px 0;
+  margin: 0;
+  padding: 26px 0 13px 0;
 }
 
 article h3 {
@@ -106,21 +115,38 @@ th {
   background-color: #f5f5f5;
   text-align: left;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   padding: 4px 8px;
+  font-size: 15px;
   border: #e0e0e0 1px solid;
+  color: #333;
 }
 
 td {
-  vertical-align: top;
-  padding: 2px 8px;
+  vertical-align: middle;
+  padding: 10px 8px;
   border: #e0e0e0 1px solid;
+  font-size: 15px;
+}
+
+td > p {
+  font-size: 15px;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 21px;
 }
 
 #generator .content {
   color: #b0b0b0;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #ccc;
   padding: 10px 0;
+  font-size: 15px;
+}
+
+#generator .content > a {
+  color: #b0b0b0;
+  padding: 10px 0;
+  font-size: 15px;
 }
 
 .label-optional {
@@ -227,17 +253,18 @@ pre.language-api .pun {
 
 code, kbd, pre, samp {
   font-family: 'Droid Sans Mono', Menlo, Monaco,Consolas, "Courier New", monospace;
-  font-size: 15px;
-  color: #444444;
+  font-size: 14px;
 }
 
 p > code {
   background-color: rgba(0,0,0,0.1);
+  border-radius: 0px;
+  color: #000;
 }
 
 pre code {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Droid Sans Mono', Menlo, Monaco,Consolas, "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
@@ -253,6 +280,7 @@ pre code {
   border: none;
   border-bottom-color: transparent;
   font-size: 15px;
+  padding: 7px 15px;
 }
 
 .nav-tabs {
@@ -262,12 +290,13 @@ pre code {
 .nav-tabs>li>a {
   border: none;
   border-radius: 0;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
   font-weight: 400;
   font-size: 15px;
   background-color: #9a9a9a;
   color: #fff;
+  padding: 7px 15px 12px 15px;
 }
 
 .nav-tabs>li>a:hover {
@@ -298,7 +327,7 @@ pre.language-json .pun {
 .sidenav {
   width: 228px;
   margin: 0;
-  padding: 20px 20px 20px 0;
+  padding: 0px 20px 20px 0;
   position: fixed;
   top: 0;
  /* left: 0;*/
@@ -311,7 +340,13 @@ pre.language-json .pun {
 }
 
 .sidenav > li > a {
-  display: block;
+  color: #666;
+  font-size: 15px;
+  padding: 0px 15px;
+  line-height: 18px;
+  padding-bottom: 12px;
+
+  /*display: block;
   width: 192px;
   margin: 0;
   padding: 10px 11px;
@@ -321,21 +356,25 @@ pre.language-json .pun {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: #000;*/
 }
 
 .sidenav > li.nav-header > a {
-  padding: 5px 10px;
-  border-bottom: 1px solid #e5e5e5;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-top: 26px;
+  letter-spacing: 0.5px;
+  color: #333;
   width: 190px;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  background-color: #ffffff;
+  background-color: transparent;
+  border-top: 1px solid #ccc;
 }
 
 .sidenav > li.nav-header.active > a {
-  background-color: #e5e5e5;
+  color: #ff0c3e;
 }
 
 .sidenav > .active > a {
@@ -344,7 +383,8 @@ pre.language-json .pun {
 }
 
 .sidenav > li > a:hover {
-  background-color: #ffffff;
+  background-color: transparent;
+  color: #ff0c3e;
 }
 
 .sidenav > li.has-modifications a {
@@ -615,6 +655,10 @@ button#version,
 }
 
 .navbar-default .navbar-nav>li>a {
+  color: rgba(255,255,255,0.7);
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   color: #fff;
 }
 
@@ -629,11 +673,11 @@ li.active a {
 }
 
 .main-wrapper {
-  margin-top: 90px;
+  margin-top: 46px;
 }
 
 .sidenav {
-  top: 80px;
+  top: 53px;
 }
 
 .navbar {
@@ -641,13 +685,19 @@ li.active a {
 }
 
 .overview-back {
-  margin: 0 0 25px 15px;
+  margin: 32px 0 10px 13px;
 }
 
 .overview-back a {
-  color: #000;
-  font-weight: bold;
-  font-size: 18px;
+  color: #333;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.overview-back a:hover{
+  color: #ff0c3e;
 }
 
 h1:before {
