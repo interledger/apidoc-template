@@ -24,8 +24,8 @@ td.code {
 
 #content {
   padding-top: 16px;
-  z-Index: -1;
-  margin-left: 270px;
+ /* z-Index: -1;*/
+ /* margin-left: 270px;*/
 }
 
 p {
@@ -325,7 +325,7 @@ pre.language-json .pun {
  * Sidenav
  * ------------------------------------------------------------------------------------------ */
 .sidenav {
-  width: 228px;
+/*  width: 228px;*/
   margin: 0;
   padding: 0px 20px 20px 0;
   position: fixed;
@@ -345,18 +345,6 @@ pre.language-json .pun {
   padding: 0px 15px;
   line-height: 18px;
   padding-bottom: 12px;
-
-  /*display: block;
-  width: 192px;
-  margin: 0;
-  padding: 10px 11px;
-  border: 0;
-  border-left: transparent 4px solid;
-  border-right: transparent 4px solid;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #000;*/
 }
 
 .sidenav > li.nav-header > a {
@@ -367,7 +355,7 @@ pre.language-json .pun {
   padding-top: 26px;
   letter-spacing: 0.5px;
   color: #333;
-  width: 190px;
+  width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   background-color: transparent;
   border-top: 1px solid #ccc;
@@ -700,12 +688,34 @@ li.active a {
   color: #ff0c3e;
 }
 
-h1:before {
+#sidenav {
+  padding-left: 0;
+}
+
+article:before {
     display: block;
-    content: " ";
-    margin-top: -60px;
+    content: "";
+    margin-top: -60px !important;
     height: 60px;
     visibility: hidden;
+    position: relative;
+    width: 0;
+}
+
+.anchor:before {
+    display: block;
+    content: "";
+    margin-top: -120px !important;
+    height: 120px;
+    visibility: hidden;
+    position: relative;
+    width: 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px !important;
+  }
 }
 
 

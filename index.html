@@ -109,17 +109,19 @@
 </script>
 
 <script id="template-sections" type="text/x-handlebars-template">
-  <section id="api-{{group}}">
-    <h1>{{underscoreToSpace title}}</h1>
-    {{#if description}}
-      <p>{{{nl2br description}}}</p>
-    {{/if}}
-    {{#each articles}}
-      <div id="api-{{group}}-{{name}}">
-        {{{article}}}
-      </div>
-    {{/each}}
-  </section>
+  <div class="anchor" id="api-{{group}}">
+    <section>
+      <h1>{{underscoreToSpace title}}</h1>
+      {{#if description}}
+        <p>{{{nl2br description}}}</p>
+      {{/if}}
+      {{#each articles}}
+        <div id="api-{{group}}-{{name}}">
+          {{{article}}}
+        </div>
+      {{/each}}
+    </section>
+  </div>
 </script>
 
 <script id="template-article" type="text/x-handlebars-template">
@@ -655,8 +657,8 @@
 <div class="container main-wrapper">
   <div class="row">
     <div class="col-sm-12">
-      <div id="sidenav" class="span2"></div>
-      <div id="content">
+      <div id="sidenav" class="span2 col-sm-4"></div>
+      <div class="col-sm-8" id="content">
         <div id="project"></div>
         <div id="header"></div>
         <div id="sections"></div>
