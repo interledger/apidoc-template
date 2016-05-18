@@ -327,7 +327,7 @@ pre.language-json .pun {
 .sidenav {
   width: 268px;
   margin: 0;
-  padding: 0px 0 20px 0;
+  padding: 0 0 20px 0;
   position: fixed;
   top: 0;
  /* left: 0;*/
@@ -710,6 +710,18 @@ article:before {
     visibility: hidden;
     position: relative;
     width: 0;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+img.logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 @media (min-width: 1200px) {
