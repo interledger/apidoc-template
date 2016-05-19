@@ -712,6 +712,12 @@ article:before {
     width: 0;
 }
 
+li.nav-header:before {
+  display: block;
+  content: "";
+  height: 13px;
+}
+
 .logo {
   width: 20px;
   height: 20px;
