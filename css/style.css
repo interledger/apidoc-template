@@ -731,3 +731,66 @@ img.logo:hover {
 }
 
 
+.onoffswitch {
+  position: relative;
+  width: 30px;
+  top: 17px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 15px;
+  padding: 0;
+  line-height: 15px;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 15px;
+  background-color: #000000;
+  transition: background-color 0.3s ease-in;
+}
+
+.onoffswitch-label:before {
+  content: "";
+  display: block; width: 15px; margin: 0px;
+  background: #000;
+  position: absolute; top: 0; bottom: 0;
+  right: 15px;
+  border: 2px solid rgba(255,255,255,0.7); border-radius: 15px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #FF0C3E;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #FF0C3E;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark p,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark li,
+.dark a,
+.dark .sidenav > li > a {
+  color: #fff;
+}
+

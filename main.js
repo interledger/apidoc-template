@@ -321,6 +321,13 @@ require([
         $scrollSpy('refresh');
     });
 
+    //on-off switch
+    $(function() {
+      $(".onoffswitch-label").click(function() {
+        $('body').toggleClass('dark');
+      });
+    });
+
     // Content-Scroll on Navigation click.
     $('.sidenav').find('a').on('click', function(e) {
         e.preventDefault();
