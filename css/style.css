@@ -35,7 +35,7 @@ p {
 h1 {
   font-size: 48px;
   font-weight: 600;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   color: #333;
   margin-bottom: 10px;
 }
@@ -71,7 +71,7 @@ article {
 }
 
 article h1 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   font-size: 26px;
   line-height: 32px;
