@@ -861,7 +861,7 @@ pre.prettyprint {
   font-weight: 400;
   color: #fff;
   letter-spacing: 0.7px;
-  border-top: 1px solid rgba(0,0,0,0.3);
+/*  border-top: 1px solid rgba(0,0,0,0.3);*/
 }
 
 .dark .sidenav > li > a:hover {
