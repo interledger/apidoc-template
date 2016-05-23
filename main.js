@@ -341,7 +341,7 @@ require([
 
       if (localStorage['theme'] == "dark") {
         $('.onoffswitch-label')[0].click();
-        $('body').addlass('dark');
+        $('body').addClass('dark');
       }
 
     });
