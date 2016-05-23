@@ -14,6 +14,10 @@ body, p, a, div {
   font-weight: 400;
 }
 
+a, a:hover {
+  color: #ff0c3e;
+}
+
 td.code {
   font-size: 14px;
   font-family: "Source Code Pro";
@@ -639,7 +643,7 @@ button#version,
 .navbar-default .navbar-nav>.active>a:hover {
   background-color: rgba(255,255,255,0.2);
   color: #fff;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #FF0C3E;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -705,8 +709,8 @@ article:before {
 .anchor:before {
     display: block;
     content: "";
-    margin-top: -120px !important;
-    height: 120px;
+    margin-top: -130px !important;
+    height: 130px;
     visibility: hidden;
     position: relative;
     width: 0;
@@ -785,18 +789,153 @@ img.logo:hover {
   right: 0px;
 }
 
+pre.prettyprint {
+  background-color: #373e3f;
+}
+
+/* ------------------------------------------------------------------------------------------
+ * Dark Theme
+ * ------------------------------------------------------------------------------------------ */
+
 .dark {
-  background-color: #000;
+  background-color: #253338;
+  color: #fff;
+}
+.dark p {
+  font-weight: 300;
+  color: #ccc;
+  letter-spacing: 0.3px;
+}
+
+.dark h1 {
+  font-weight: 400;
   color: #fff;
 }
 
-.dark p,
-.dark h1,
-.dark h2,
-.dark h3,
-.dark li,
-.dark a,
+.dark h2 {
+  font-weight: 200;
+  color: #ccc;
+}
+
+.dark section h1 {
+  font-weight: 400;
+  letter-spacing: .7px;
+  color: rgba(255,255,255,0.5);
+}
+
+.dark section {
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.dark article h1 {
+  font-weight: 300;
+  letter-spacing: .5px;
+  color: #fff;
+}
+
+.dark h3 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.dark p > code {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.dark article h2 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
 .dark .sidenav > li > a {
+  color: #ccc;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.dark .sidenav > li.nav-header > a {
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.7px;
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.dark .sidenav > li > a:hover {
+  color: #FF2C57;
+}
+
+.dark .sidenav > li.nav-header.active > a {
+  color: #FF2C57;
+}
+
+.dark li.active a {
+  color: #FF2C57;
+}
+
+.dark .overview-back a{
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
+
+.dark .overview-back a:hover{
+  color: #FF2C57;
+  font-weight: 400;
+}
+
+.dark .nav-tabs>li.active>a,
+.dark .nav-tabs>li.active>a:focus,
+.dark .nav-tabs>li.active>a:hover{
+  color: #fff;
+  background-color: #19292D;
+  font-weight: 400;
+}
+
+.dark .nav-tabs>li>a{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.dark .nav-tabs>li>a:hover{
+  background-color: rgba(0,0,0,0.3);
+  font-weight: 400;
   color: #fff;
 }
 
+.dark th {
+    background-color: rgba(0,0,0,0.4);;
+    font-weight: 400;
+    border: 1px solid #1c1c1c;
+    color: #fff;
+    letter-spacing: 0.7px;
+}
+
+.dark td {
+  border: 1px solid #1c1c1c;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.dark td.code {
+  color: #fff;
+}
+.dark a, .dark a:hover {
+  color: #FF2C57;
+  font-weight: 300;
+}
+
+.dark .navbar-default .navbar-nav>li>a {
+    font-weight: 400;
+}
+
+.dark pre.prettyprint {
+  background-color: #19292D;
+}
+
+.dark #generator .content{
+  border-top: 1px solid rgba(0,0,0,0.4);
+  color: #666;
+}
