@@ -814,6 +814,12 @@ table>tbody>tr:nth-of-type(even) {
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+@media (max-width: 992px) {
+  .sidenav {
+    width: auto !important;
+  }
+}
+
 
 /* ------------------------------------------------------------------------------------------
  * Dark Theme
