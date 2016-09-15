@@ -159,6 +159,7 @@ td > p {
 
 .label-optional {
   float: right;
+  color: #606060;
 }
 
 .open-left {
@@ -966,4 +967,8 @@ table>tbody>tr:nth-of-type(even) {
 
 .dark table>tbody>tr:nth-of-type(even) {
   background-color: #333C40;
+}
+
+.dark .label-optional {
+  color: #CCC;
 }
