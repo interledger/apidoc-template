@@ -862,7 +862,7 @@ table>tbody>tr:nth-of-type(even) {
   color: #fff;
 }
 
-.dark p > code {
+.dark p > code, .dark li > code {
   background-color: #434B50;
   border-radius: 0px;
   color: #fff;
