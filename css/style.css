@@ -159,7 +159,10 @@ td > p {
 
 .label-optional {
   float: right;
-  color: #606060;
+  color: #ff0076;
+  border: 1px solid;
+  font-weight: 500;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .open-left {
@@ -626,6 +629,8 @@ ul.nav-tabs {
 
 /*Custom*/
 
+
+
 button#version,
 .version {
   display: none;
@@ -971,4 +976,39 @@ table>tbody>tr:nth-of-type(even) {
 
 .dark .label-optional {
   color: #CCC;
+}
+
+/* ------------------------------------------------------------------------------------------
+ * Fix & usability
+ * ------------------------------------------------------------------------------------------ */
+.type {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  margin: 10px 0 0px 0;
+  padding: 4px 14px;
+  text-transform: uppercase;
+  background-color: #3387CC;
+  color: #ffffff;
+}
+
+.type__get {
+  background-color: green;
+}
+
+.type__put {
+  background-color: #e5c500;
+}
+
+.type__post {
+  background-color: #4070ec;
+}
+
+.type__delete {
+  background-color: #ed0039;
+}
+
+pre .lit {
+  color: #00e2ff !important;
 }
